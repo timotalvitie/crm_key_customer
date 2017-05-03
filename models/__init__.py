@@ -15,3 +15,4 @@
 
 import res_partner
 import customer_level
+import sale_order
