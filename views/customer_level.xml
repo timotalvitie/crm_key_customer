@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!-- Create a new tree view for customer level -->
+        <record id="customer_level_tree_key_customer" model="ir.ui.view">
+            <field name="name">customer.level.tree.key.customer</field>
+            <field name="model">crm_key_customer.customer_level</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Create an action that is triggered when the menuitem is clicked. It launches the tree view -->
+        <record id="action_customer_levels" model="ir.actions.act_window">
+          <field name="name">Customer Levels</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">crm_key_customer.customer_level</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Add the menuitem under Sales / Configuration -->
+        <menuitem id="menuitem_customer_levels" name="Customer levels" action="action_customer_levels" parent="sales_team.menu_sale_config" />
+
+    </data>
+</openerp>
