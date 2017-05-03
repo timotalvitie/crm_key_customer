@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!-- Inherit the existing partner form view and add the key customer field there -->
+        <record id="partner_form_key_customer" model="ir.ui.view">
+            <field name="name">partner.form.key.customer</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Key customer info">
+                        <group>
+                            <field name="is_key_customer"/>
+                        </group>
+                    </page>2
+                </notebook>
+            </field>
+        </record>
+    </data>
+</openerp>

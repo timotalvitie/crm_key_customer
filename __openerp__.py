@@ -26,5 +26,6 @@ Key Customer (Demo module)
 
 """,
     'data': [
+        'views/res_partner.xml',
     ],
 }
