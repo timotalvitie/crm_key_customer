@@ -20,7 +20,9 @@
             <field name="model">crm_key_customer.customer_level</field>
             <field name="arch" type="xml">
                 <form string="Customer Levels">
-                    <header></header>
+                    <header>
+                        <button string="Show statistics" type="object" name="show_statistics" class="oe_highlight"/>
+                    </header>
                     <sheet>
                         <div class="oe_title">
                             <h1>
