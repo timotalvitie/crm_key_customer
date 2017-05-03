@@ -31,6 +31,12 @@
                             <field name="description"/>
                         </group>
 
+                        <notebook>
+                            <page string="Customers on this level">
+                                <field name="partner_ids"/>
+                            </page>
+                        </notebook>
+
                     </sheet>
                 </form>
             </field>
