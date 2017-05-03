@@ -14,4 +14,4 @@ class SaleOrder(models.Model):
         if self.partner_id.is_key_customer is True:
             customer_name = self.partner_id.name
             level = self.partner_id.customer_level_id.name
-            raise Warning('{} is a level {} key customer!'.format(customer_name, level))
+            raise Warning(_('{} is a level {} key customer!').format(customer_name, level))

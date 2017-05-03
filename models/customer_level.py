@@ -22,9 +22,9 @@ class CustomerLevel(models.Model):
             else:
                 individual_count += 1
 
-        popup_message = 'This customer level contains\n'
-        popup_message += '-{} companies\n'.format(company_count)
-        popup_message += '-{} individuals'.format(individual_count)
+        popup_message = _('This customer level contains\n')
+        popup_message += _('-{} companies\n').format(company_count)
+        popup_message += _('-{} individuals').format(individual_count)
 
         raise Warning(popup_message)
 
