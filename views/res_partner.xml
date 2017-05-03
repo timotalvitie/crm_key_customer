@@ -11,6 +11,7 @@
                     <page string="Key customer info">
                         <group>
                             <field name="is_key_customer"/>
+                            <field name="customer_level_id"/>
                         </group>
                     </page>
                 </notebook>
