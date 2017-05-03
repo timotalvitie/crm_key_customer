@@ -36,7 +36,7 @@
 
                         <notebook>
                             <page string="Customers on this level">
-                                <field name="partner_ids"/>
+                                <field name="partner_ids" widget="many2many"/>
                             </page>
                         </notebook>
 
