@@ -12,7 +12,7 @@
                         <group>
                             <field name="is_key_customer"/>
                         </group>
-                    </page>2
+                    </page>
                 </notebook>
             </field>
         </record>
