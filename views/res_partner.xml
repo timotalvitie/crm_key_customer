@@ -11,7 +11,7 @@
                     <page string="Key customer info">
                         <group>
                             <field name="is_key_customer"/>
-                            <field name="customer_level_id"/>
+                            <field name="customer_level_id" attrs="{ 'required': [('is_key_customer', '=', True)] }"/>
                         </group>
                     </page>
                 </notebook>
